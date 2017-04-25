@@ -12,7 +12,8 @@
   border-radius: 3px;
   text-align: center;
   position: relative;
-}h3{
+}
+h3{
   display: inline-block;
 }
 
@@ -36,14 +37,19 @@ button.accordion::after{
   color: #777;
   font-weight: bold;
   float: right;
-  margin-left: 8px;
+  margin-left: 5px;
+
+}
+button.accordion.active::after{
+  content: "\2212";/* signo - al momento de mostrase el menu desglosable*/
 }
 
-.panel {
-    padding: 20 18px;
+.panel{
+    padding: 0 18px;
     background-color: #555555;
-    display: none;
-    height: 50px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
 }
 span{
   display: inline-block;
@@ -51,7 +57,7 @@ span{
   margin-right: 5px;
   font-size: 25px;
 }
-{
+/*{
   position: relative;
   margin-left: 80px;
   border-radius: 15px;
@@ -59,7 +65,7 @@ span{
   text-align: center;
   width: 100px;
   height: 30px;
-}
+}*/
 
 .color{
   border-radius: 50%;
@@ -125,6 +131,7 @@ span{
 label{
     margin: 10px 15px;
     display: block;
+    font-size: 20px;
 }
 input{
   width: 20px;
