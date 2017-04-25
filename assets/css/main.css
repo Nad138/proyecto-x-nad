@@ -1,5 +1,5 @@
 .selection-style{
-  width: 300px;
+  width: 400px;
   color: white;
   background: darkgrey;
   position: absolute;
@@ -13,6 +13,11 @@
   text-align: center;
   position: relative;
 }
+span{
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
 button{
   position: relative;
   margin-left: 80px;
@@ -22,6 +27,7 @@ button{
   width: 100px;
   height: 30px;
 }
+
 .color{
   border-radius: 50%;
   border-style: solid;
@@ -82,4 +88,14 @@ button{
 #rosado{
   background-color: #fdb6b5;
   border-color: #fc8583;
+}
+label{
+  display: block;
+  margin: 10px 15px;;
+}
+label::after{
+  display: none;
+}
+label::before{
+  display: block;
 }
