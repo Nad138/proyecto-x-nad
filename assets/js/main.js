@@ -27,8 +27,9 @@ function selectColor(){
   var celeste = document.getElementById("celeste");
   var rosado = document.getElementById("rosado");
 
-  li.addEventListener("click", function(){
+  blanco.addEventListener("click", function(){
     alert("hola");
+    console.log("hola");
   });
 
 }
