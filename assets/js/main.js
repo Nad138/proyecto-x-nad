@@ -27,12 +27,16 @@ function selectColor(colores){
 }*/
 
   var outfit = [];
-  var blanco = document.getElementById("blanco");
-  blanco.addEventListener("click",selectColor);
-  function selectColor(blanco){
+  var colores = document.getElementsByTagName("li");
+  var color = colores[0];
+  var blanco = color.id;
+  colores[0].addEventListener("click",selectColor);
+  function selectColor(color){
   outfit.push(blanco);
   }
-  /*var marron = document.getElementById("marron");
+  /*
+  var blanco = document.getElementById("blanco");
+  var marron = document.getElementById("marron");
   var rojo = document.getElementById("rojo");
   var naranja = document.getElementById("naranja");
   var amarillo = document.getElementById("amarillo");
@@ -41,21 +45,31 @@ function selectColor(colores){
   var gris = document.getElementById("gris");
   var morado = document.getElementById("morado");
   var azul = document.getElementById("azul");
-  var celeste = document.getElementById("celeste");*/
-  var rosado = document.getElementById("rosado");
+  var celeste = document.getElementById("celeste");
+  var rosado = document.getElementById("rosado");*/
 
 
-
+var pantalones = document.getElementsByClassName("pantalones");
+var clase = pantalones[0];
+var jeans = clase.value;
+clase.addEventListener("click", checkbox);
 function checkbox(){
-var jeans = document.getElementById("jeans");
-if (jeans.checked==true) {
-  alert("hola");
+  outfit.push(jeans);
 }
+
+
+var tops = document.getElementsByClassName("tops");
+var clase = tops[0];
+var blusa = clase.value;
+clase.addEventListener("click", checkbox);
+function checkbox(){
+  outfit.push(blusa);
 }
+
   var listo = document.getElementById("listo");
    listo.addEventListener("click", hola);
 
-   function hola(){
+   function myOutfit(outfit){
+    
 
-     alert("hola");
    }
