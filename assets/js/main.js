@@ -14,18 +14,16 @@ for(var i=0;i<menu.length;i++){
 }
 
 
-var li = document.getElementsByClassName("color");
-function selectColor(li){
-
-  for(var i=0;i<li.length;i++){
-    li[i].addEventListener("click", look);
-
-      function look(){
-        alert("hola");
+var color = document.getElementsByTagName("li");
+function selectColor(color){
+  for(var i=0;i<color.length;i++){
+    color[i].onclick = function(){
+       alert("hola");
     }
   }
 }
-  /*
+
+
   var blanco = document.getElementById("blanco");
   var marron = document.getElementById("marron");
   var rojo = document.getElementById("rojo");
@@ -40,14 +38,14 @@ function selectColor(li){
   var rosado = document.getElementById("rosado");
 
 
-}
+
 function checkbox(){
 var jeans = document.getElementById("jeans");
 if (jeans.checkbox.select) {
   alert("hola");
 
 }
-}*/
+}
   var listo = document.getElementById("listo");
    listo.addEventListener("click", hola);
 
