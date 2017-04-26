@@ -14,18 +14,25 @@ for(var i=0;i<menu.length;i++){
 }
 
 
-var color = document.getElementsByTagName("li");
-function selectColor(color){
-  for(var i=0;i<color.length;i++){
-    color[i].onclick = function(){
-       alert("hola");
+
+/*var colores = document.getElementsByTagName("li");
+function selectColor(colores){
+  for(var i=0;i<colores.length;i++){
+    colores[0].onclick = function(){
+       var color = colores[0].id;
+       outfit.push(color);
+     }
     }
-  }
-}
 
+}*/
 
+  var outfit = [];
   var blanco = document.getElementById("blanco");
-  var marron = document.getElementById("marron");
+  blanco.addEventListener("click",selectColor);
+  function selectColor(blanco){
+  outfit.push(blanco);
+  }
+  /*var marron = document.getElementById("marron");
   var rojo = document.getElementById("rojo");
   var naranja = document.getElementById("naranja");
   var amarillo = document.getElementById("amarillo");
@@ -34,16 +41,15 @@ function selectColor(color){
   var gris = document.getElementById("gris");
   var morado = document.getElementById("morado");
   var azul = document.getElementById("azul");
-  var celeste = document.getElementById("celeste");
+  var celeste = document.getElementById("celeste");*/
   var rosado = document.getElementById("rosado");
 
 
 
 function checkbox(){
 var jeans = document.getElementById("jeans");
-if (jeans.checkbox.select) {
+if (jeans.checked==true) {
   alert("hola");
-
 }
 }
   var listo = document.getElementById("listo");
