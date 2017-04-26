@@ -83,7 +83,7 @@ span:hover{
   -webkit-transform: scale(1.1);
   -webkit-transition: all .0.3s ease-in-out;
 }
-/*{
+#listo{
   position: relative;
   margin-left: 80px;
   border-radius: 15px;
@@ -91,7 +91,7 @@ span:hover{
   text-align: center;
   width: 100px;
   height: 30px;
-}*/
+}
 
 .color{
   border-radius: 50%;

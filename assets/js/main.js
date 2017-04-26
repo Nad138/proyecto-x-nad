@@ -12,8 +12,20 @@ for(var i=0;i<menu.length;i++){
     }
   }
 }
-function selectColor(){
-  var li = document.getElementsByClassName("color");
+
+
+var li = document.getElementsByClassName("color");
+function selectColor(li){
+
+  for(var i=0;i<li.length;i++){
+    li[i].addEventListener("click", look);
+
+      function look(){
+        alert("hola");
+    }
+  }
+}
+  /*
   var blanco = document.getElementById("blanco");
   var marron = document.getElementById("marron");
   var rojo = document.getElementById("rojo");
@@ -27,9 +39,19 @@ function selectColor(){
   var celeste = document.getElementById("celeste");
   var rosado = document.getElementById("rosado");
 
-  blanco.addEventListener("click", function(){
-    alert("hola");
-    console.log("hola");
-  });
 
 }
+function checkbox(){
+var jeans = document.getElementById("jeans");
+if (jeans.checkbox.select) {
+  alert("hola");
+
+}
+}*/
+  var listo = document.getElementById("listo");
+   listo.addEventListener("click", hola);
+
+   function hola(){
+
+     alert("hola");
+   }
